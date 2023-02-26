@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "ColfaxAI";
+  src: url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff2)
+      format("woff2"),
+    url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ColfaxAI";
+  src: url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff2) format("woff2"),
+    url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.main{
+  font-size: 16px;
+  line-height: 24px;
+  color: #353740;
+  font-family: "ColfaxAI", Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.section {
+  top: 0;
+  height: 100vh;
+  position: sticky;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  background-image: url("/morfi-webpage-background.png");
+  background-size: cover; 
+  color: white;
+  width: 100%;
+}
+
+@keyframes myanimation {
+  0%{
+      background-image: url("/background-images/image1.png");
+    }
+  5%{
+      background-image: url("/background-images/image2.png");
+  }
+  10%{
+      background-image: url("/background-images/image3.png");
+  }
+  15%{
+      background-image: url("/background-images/image4.png");
+  }
+  20%{
+      background-image: url("/background-images/image5.png");
+  }
+  25%{
+      background-image: url("/background-images/image6.png");
+  }
+  30%{
+      background-image: url("/background-images/image7.png");
+  }
+  35%{
+      background-image: url("/background-images/image8.png");
+  }
+  40%{
+      background-image: url("/background-images/image9.png");
+  }
+  45%{
+      background-image: url("/background-images/image10.png");
+  }
+  50%{
+      background-image: url("/background-images/image11.png");
+  }
+  55%{
+      background-image: url("/background-images/image12.png");
+  }
+  60%{
+      background-image: url("/background-images/image13.png");
+  }
+  65%{
+      background-image: url("/background-images/image14.png");
+  }
+  70%{
+      background-image: url("/background-images/image15.png");
+  }
+  75%{
+      background-image: url("/background-images/image16.png");
+  }
+  80%{
+      background-image: url("/background-images/image17.png");
+  }
+  85%{
+      background-image: url("/background-images/image18.png");
+  }
+  90%{
+      background-image: url("/background-images/image19.png");
+  }
+  95%{
+      background-image: url("/background-images/image20.png");
+  }
+  100%{
+      background-image: url("/background-images/image1.png");
+  }
+}
+
+.main .section1 {
+  top: 0;
+  height: 100vh;
+  position: sticky;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  animation: myanimation 50s infinite;
+  background-size: cover; 
+  color: white;
+  width: 100%;
+  text-align: center;    
+  padding-top: 60px;
+}
+
+.main .section1 h3 {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: bold;  
+  margin: 16px 0 40px;
+  top: 20%;
+  position: relative;
+  animation: blink 1s infinite;
+  cursor: pointer;
+  color: gold;
+}
+.main .section1 h3 a {
+  color: gold;
+  text-decoration: none;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.section {
+  top: 0;
+  height: 100vh;
+  position: sticky;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);  
+  color: #333;
+  margin-bottom: 0;  
+  background-image: url("/morfi-webpage-background.png");
+  background-size: cover; 
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.section h2 {
+  padding: 0;
+  font-size: 30px;;
+}
+.section span {
+  display: block;
+  font-size: 30px;
+  color: #0c4eb9;
+}
+
+.section:nth-child(1n) {
+  top: 0;
+}
+
+.section:nth-child(2n) {
+  top: 0;
+}
+
+.section:nth-child(3n) {
+  top: 0;
+}
+
