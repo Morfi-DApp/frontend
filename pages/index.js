@@ -22,14 +22,14 @@ export default function Home() {
           <img src="/Morfi-Logo-white-text.png" className={styles.icon} />
           <h3><a href="/login">Login/Register</a></h3> 
         </div>
-        <div className={styles.section}>
+        {/* <div className={styles.section}>
           <h2><span>Project #2</span>Title of the Project</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         </div>
         <div className={styles.section}>
           <h2><span>Project #3</span>Title of the Project</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-        </div>
+        </div> */}
       </main>
     </div>
   );

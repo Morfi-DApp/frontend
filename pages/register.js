@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useState } from "react";
 import styles from "./styles/register.module.css";
 import ReactAudioPlayer from 'react-audio-player';
+import Link from "next/link";
 
 export default function Register() {
   const [userNameInput,setUserName] = useState("");
@@ -77,7 +78,7 @@ export default function Register() {
             value={userConfirmPasswordInput}
             onChange={(e) => setConfirmPassword(e.target.value)}
           />          
-          <input type="submit" value="Register" />
+          <Link href="/dreamForm"><input type="submit" value="Register" /></Link>
         </form>
         <div className={styles.result}>{result}</div>
         <div className={styles.images}>
