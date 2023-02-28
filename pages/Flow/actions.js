@@ -41,6 +41,7 @@ export const setupCollection = async () => {
     }
   });
 };
+// comment test
 
 // Create Dream Metadata into contract
 
