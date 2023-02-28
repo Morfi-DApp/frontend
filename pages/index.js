@@ -20,7 +20,10 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.section1}>
           <img src="/Morfi-Logo-white-text.png" className={styles.icon} />
-         <h3><a href="/login">Login/Register</a></h3>
+         <div>
+
+         <button><a href="/login">Login</a></button> 
+          </div>
         </div>
         {/* <div className={styles.section}>
           <h2><span>Project #2</span>Title of the Project</h2>
