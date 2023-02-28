@@ -116,20 +116,23 @@
   padding-top: 60px;
 }
 
-.main .section1 h3 {
-  font-size: 32px;
-  line-height: 40px;
-  font-weight: bold;  
-  margin: 16px 0 40px;
-  top: 20%;
-  position: relative;
-  animation: blink 1s infinite;
+.main button {
+  margin: 2rem;
+  padding: 12px 12px;
+  color: #fff;
+  background-color: #E4361E;
+  border: none;
+  border-radius: 40px;
+  text-align: center;
   cursor: pointer;
-  color: gold;
+  width: 140px;
 }
-.main .section1 h3 a {
-  color: gold;
+
+.main button a{
+  color: #fff;
   text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
 @keyframes blink {
