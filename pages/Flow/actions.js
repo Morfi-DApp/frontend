@@ -4,6 +4,11 @@ import * as fcl from "@onflow/fcl";
 import * as t from "@onflow/types";
 import "./config";
 
+const {
+  authorizationFunction,
+  // authorizationFunctionProposer,
+} = require("./authorization");
+
 // ///////////////
 // // Cadence code
 // ///////////////
@@ -51,13 +56,14 @@ export const createMetadata = async (name, description, image, ipfsCID) => {
       const transactionId = await fcl.mutate({
         cadence: createMetadataScript,
         args: (arg, t) => [
-          arg(metadataId, t.UInt64),
-          arg(price, t.UFix64),
-          arg(_serial, t.UInt64),
+          arg(name, t.String),
+          arg(description, t.String),
+          arg(image, t.String),
+          arg(ipfsCID, t.String),
         ],
-        proposer: fcl.currentUser,
-        payer: fcl.currentUser,
-        authorizations: [fcl.currentUser],
+        proposer: authorizationFunction,
+        payer: authorizationFunction,
+        authorizations: [authorizationFunction],
         limit: 500,
       });
       const transaction = await fcl.tx(transactionId).onceSealed();
